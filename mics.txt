@@ -1,0 +1,18 @@
+- ens viikon torstai, tunti
+
+- neljäs kategoria, jossa annotaatio
+- listanäkymässä pitää olla merkintä, että on tehty annotaatio. Day view. Mielellään koko annotaatio näkyvissä. ehkä yksi rivi
+- gateway, laturi valinta, kesto päivissä, tai kalenterinäkymä loppuväivälle
+- varaus näkyviin ja jos alle 80
+
+Projects > Aino ECG > Development Studies > AFE control testing
+
+test with fs full and battery empty
+
+Start
+Stop
+
+Factory empty device starts only after reset twice
+Could be related to totally empty flash
+
+settingsclient.py -s COM3 -i 0 -w 0

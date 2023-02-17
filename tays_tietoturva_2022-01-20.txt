@@ -1,0 +1,34 @@
+TAYS tietoturva:
+- arkkitehtuurikuvaus + rajapinnat
+- käyttäjähallinta, tunnusten voimassaolo (kuka hallinnoi)
+- kuinka TAYS ja Koskikeskus
+- EI HALUTA: käyttäjätunnus on sähköpostitunnistautuminen, mieluummin henkilönumero
+- Sähköpostiosoitteen muutoksia tapahtuu tosi paljon. PSHP tuhansia muutoksia, ei haluta, että joudutaan muuttamaan sähköposti.
+- Saako AD integraatio Microsoft Active Directory
+- Lääkärit ei saa käyttää yksityisvastaanotolla näytä juttuja.
+- Ei pääse kotikoneelta.
+- Kertakirjautuminen: Sidotaan VRK-korttiin
+- Hoitajat ja lääkärit vihaavat ylimääräisiä käyttäjätunnus/salasana pareja. Yksinkertainen LDAP yhteys.
+- Selaimella käytettävät kirjautuu suoraan pääpotilatietojärjestelmän kautta. Hakee Windowsin kautta. Ostajat tykkää.
+
+Kaikki ei halua, mutta pitäisi tarjota niin että on mahdollista.
+- Riippuen organisaatiosta. Pitää ladata sertifikaatti koneelta, jotta pääsee loggautumaan tietyltä koneelta. Konekohtaisuus on OK. Ei ole niin suurta vaihtuvuutta koneissa.
+- PHSP järjestelmiä käytössä noin 600
+
+- CE merkistä tai sertifikaateista ei ole mitään arvoa.
+- Aina järjestelmän laajuudesta riippuen tehdään tietoturvatarkastus. Kolme luokkaa.
+- Lukee manuaalit ja testailee sen mukaan kuin on mahdollista.
+- Ehkä 1 tai 2 luokka PSHP:llä
+- Halutaan tietynmallinen GDPR raportti
+- Riskitaulukko
+- Kaikki ulkopuoliset auditit on hyviä PSHP:lle, koska se antaa edes jotain vastauksia, mutta usein löytyy semmosia joihin ei ole vastattu
+- Tietoturva-auditissa pyydetään kokoamaan kaikki mahdollinen tekninen dokumentaatio
+
+
+
+# 2NS
+ISO 9001 sertifikaatti löytyy. 27001 tulee myöhemmin.
+OWASP top 10 on jo aika hyvä
+
+Oma tietoturvapolitiikka:
+Milloin uusitaan tietoturva-audit? Tietyin väliajoin + major muutosten yhteydessä.

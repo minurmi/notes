@@ -1,0 +1,36 @@
+# Internal Audit
+
+- Quality Manual:
+	+ Määritä kriittiset prosessit. Jos kriittisiin prosesseihin tulee radikaaleja muutoksia, niin on hyvä että tarkistetaan riski/impaktilähtöisesti.
+- Ennen kuin aletaan siirtyä sisäiseen palvelukehitykseen -> pidettävä koulutus Atostekin laatujärjestelmään
+- Kaikki dokumentit pitää siirtää hyväksyttyyn statukseen, kun tallennetaan SharePointiin
+- EXP arvioita softista
+- Päivitä TF tab Aino Document Registeristä
+- QA/RA voisi olla rooli ylimmällä dokumenttitasolla
+
+Kehitystehdotukset
+1. Ulkoisten dokumenttien versiointi
+2. Softien validaatiolaajuus
+3. Dokumenttien laatijakriteeristö
+4. Document record control procedure: Mininta paperidokkarien käsittelyyn
+5. Document record control procedure: Arkaluontoisen terveysdatan käytäntöjen kuvaus
+6. Job description: varahenkiöt oleellisille. Päivitys nykyisiin
+7. Osto suoritustason seuranta ja kriteeristö prosessiin. Dokumentaatio löytyy, mutta ei kerrottu.
+8. NC-8.2.2: Aikamääreet valitusten käsittelyyn
+
+Antti:
+1. Ulkoisten dokumenttien versionumerointi (draftien hyväksyntä)
+2. Softien validaatiotarpeen/laajuuden riskipohjainen arvio esim. GXP-arvio
+3. Laatudokumenttien laatijoille vaatimukset (kuvaus ketkä saavat tehdä uusia proseduureja)
+4. Kuvaus paperisten dokumenttien vanhojen versioiden ilmoitus/poistamismenettelyistä proseduuriin
+5. Document record control procedure: Arkaluonteisen terveysdatan käsittelylle vaatimukset
+6. Job descriptioihin laadulle kriittisiin rooleihin varahenkilöt
+7. Gap analyysi skilleihin??
+8. Ostoprosessiin suoritustason seuranta. Tarkastetaan saapuneet tuotteet: määrä ja että ulkoisesti ok
+9. NC: 8.2.2 Ei aikamääreitä valitusten käsittelylle.
+
+EET ECG BLE siirto päällä
+10:14
+10:19
+10:32
+10:42

@@ -1,0 +1,29 @@
+# OWASP meeting
+1.1.2 add a review on the new features on the recurity point of view
+1.1.4 review documents on trust boundaries
+1.1.7 review software guidelines and the existing guideline
+1.6 audit key generation on manufacturing.
+1.11.1 
+1.14.2
+V5.4
+
+Audit listen to the suggestions
+build process
+check if lookup secret stuff for 2-factor authentication is handled correctly
+
+
+
+
+# 2NS kick-off meeting 15.02.2022
+- deliver URL for services. user production environment
+- 2 users from each user group: nurse, doctor, admin, superuser
+- set up a slack channel
+
+2NS security audit
+markus.korkea-aho@2ns.fi
+
+https://pulseonfi.sharepoint.com/TesterData/AinoTester2/Tester/History/Aino%20Leak%20Test
+
+mail roskaposti
+
+

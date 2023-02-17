@@ -1,0 +1,84 @@
+Device Descriptor Request Failed
+
+## ERROR:
+Device USB\VID_0000&PID_0002\7&44504bd&1&2 had a problem starting.
+
+Driver Name: usb.inf
+Class Guid: {36fc9e60-c465-11cf-8056-444553540000}
+Service: 
+Lower Filters: 
+Upper Filters: 
+Problem: 0x2B
+Problem Status: 0x0
+
+## Information
+Device USB\VID_0000&PID_0002\7&44504bd&1&2 was configured.
+
+Driver Name: usb.inf
+Class Guid: {36fc9e60-c465-11cf-8056-444553540000}
+Driver Date: 06/21/2006
+Driver Version: 10.0.19041.488
+Driver Provider: Microsoft
+Driver Section: BADDEVICE.Dev.NT
+Driver Rank: 0xFF0000
+Matching Device Id: USB\DEVICE_DESCRIPTOR_FAILURE
+Outranked Drivers: usb.inf:USB\DEVICE_DESCRIPTOR_FAILURE:00FF2000
+Device Updated: false
+Parent Device: USB\VID_2109&PID_2812\6&34ced5b7&0&5
+
+## Warning
+Device USB\VID_0000&PID_0002\7&44504bd&1&2 was not migrated due to partial or ambiguous match.
+
+Last Device Instance Id: USB\VID_28DE&PID_1142\6&317d6f41&0&2
+Class Guid: {36fc9e60-c465-11cf-8056-444553540000}
+Location Path: 
+Migration Rank: 0xF000FFFFFFFFF120
+Present: false
+Status: 0xC0000719
+
+
+treongw1-4b5833f0:~$ /sbin/ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN mode DEFAULT group default qlen 1000
+    link/ether 10:08:2c:c4:b9:27 brd ff:ff:ff:ff:ff:ff
+3: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+4: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether 2c:6b:7d:12:84:37 brd ff:ff:ff:ff:ff:ff
+5: ppp0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1200 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 500
+    link/none
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default
+    link/ether 02:42:63:95:a5:eb brd ff:ff:ff:ff:ff:ff
+	
+	
+Gateway packet monitoring
+
+tcpdump -i ppp0 -tt -G 8400 -w "ppp0_%Y-%m-%d_%H-%M-%S%z.pcap" -e -z xz -l -U --print | xz -c > ppp0_$(date +%Y-%m-%d_%H-%M-%S%z).out.xz
+
+-C file_size
+
+
+treongw1-e66f5c0c:~$ sudo /sbin/ip address
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 14:42:fc:2a:11:45 brd ff:ff:ff:ff:ff:ff
+3: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+4: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 74:e1:82:07:9e:4c brd ff:ff:ff:ff:ff:ff
+5: ppp0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1200 qdisc pfifo_fast state UNKNOWN group default qlen 500
+    link/none
+    inet 178.55.75.180/32 brd 178.55.75.180 scope global ppp0
+       valid_lft forever preferred_lft forever
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    link/ether 02:42:b9:e2:3a:df brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+	   
+/usr/lib/ofono/test/list-contexts

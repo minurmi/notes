@@ -1,0 +1,29 @@
+---------------------------------------------------
+
+# Investigating https://pulseon.atlassian.net/browse/BUGS-55
+
+Accessed prod/dmsdb/readonly 10:41
+
+executed query
+SELECT *
+FROM public."MeasurementSession",
+encode("SessionId", 'hex') as session_id_hex,
+encode("AesKey", 'hex') as aes_key_hex,
+to_hex(2538576508) as session_id_device
+WHERE session_id_hex = session_id_device
+
+"Id"	"StartTime"	"EndTime"	"MeasurementSessionStatus"	"SessionId"	"AesKey"	"DeviceUid"	"SilentTimeStart"	"SilentTimeEnd"	"PatientId"	"HasReceivedEncryptedPackage"	"BlePasskey"	"TimeZoneId"	"MeasurementSessionType"	"TimedMeasurement1"	"TimedMeasurement2"	"TimedMeasurement3"	"TimedMeasurement4"	"EndTimeFromDevice"	"session_id_hex"	"aes_key_hex"	"session_id_device"
+"d2bc65ab-9c27-4eb1-89c8-0e7f796a3c1b"	"2022-09-22 17:00:00.503394+00"	"2022-10-09 20:59:59+00"	"Started"	"binary data"	"binary data"	"(01)06430054330121(10)0222(11)220119(21)000220"			"722c0f8e-bdfe-4168-83d7-059aff1795a2"	true	"963269"	"Europe/Helsinki"	"Screening"		"09:00:00"	"13:00:00"			"974f9a7c"	"fb81092d80e399bf3f0e3ebf40bcf656"	"974f9a7c"
+
+
+Accessed prod/imsdb/readonly 13:42 2022-10-19
+
+SELECT *
+FROM public."DeviceDebugData"
+WHERE "DeviceUid" = '(01)06430054330121(10)0222(11)220119(21)000220'
+
+
+-----------------------------------------------
+
+
+

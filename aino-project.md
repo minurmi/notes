@@ -1,0 +1,4 @@
+- päätetään konsepti
+- sovitaan DIR
+- päätetään arkkitehtuuri
+- 

@@ -1,0 +1,61 @@
+with kore-apniot-umno100-urat79.cfg
+
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/lte.c:ofono_lte_create() LTE atom created
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/modem.c:get_modem_property() modem 0x14ea010 property AlwaysOnline
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/modem.c:get_modem_property() modem 0x14ea010 property AlwaysOnline
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/ublox-serial.c:ublox_set_online() modem 0x14ea010 online
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:get_response_common_cb() crsm_info_cb: 90, 00, 27
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/modem.c:modem_change_state() old state: 2, new state: 3
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/ubloxmodem/netmon.c:ublox_netmon_probe() ublox netmon probe
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/ublox-serial.c:set_online_cb() online!?
+Nov  2 12:20:18 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 24
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/sim.c:ofono_sim_add_spn_watch() 0x1508488
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:get_response_common_cb() crsm_info_cb: 90, 00, 24
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 17
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/simfs.c:sim_fs_op_read_block_cb() bufoff: 0, dataoff: 0, tocopy: 17
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs-provision.c:__ofono_gprs_provision_get_settings() Calling provisioning plugin 'Provisioning'
+Nov  2 12:20:19 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Provisioning for MCC 234, MNC 50, SPN 'KORE'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Found 2 APs
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Name: 'Internet'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() APN: 'teal'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Type: OFONO_GPRS_CONTEXT_TYPE_INTERNET
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() SPN: 'teal'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Username: '(null)'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Password: '(null)'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Name: 'pepperMMS'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() APN: 'mms'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Type: OFONO_GPRS_CONTEXT_TYPE_MMS
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() SPN: '(null)'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Username: 'mms'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/provision.c:provision_get_settings() Password: '(null)'
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/sim.c:ofono_sim_remove_spn_watch() 0x1508488
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/bluez5.c:bt_register_profile() Bluetooth: Registering 00001103-0000-1000-8000-00805f9b34fb (dun_gw) profile
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/plugins/bluez5.c:profile_register_cb()
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/network-registration.c:build_cmer_string()
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs.c:gprs_list_active_contexts_callback() error = 0
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/sim.c:ofono_sim_add_spn_watch() 0x1508488
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/network.c:__ofono_netreg_add_status_watch() 0x14e9380
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:get_response_common_cb() crsm_info_cb: 90, 00, 28
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/network.c:ofono_netreg_status_notify() /ubloxmodem_0 status 4 tech -1 lac -1 ci -1
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/network.c:current_operator_callback() 0x14e9380, (nil)
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs.c:netreg_status_changed() 4 (unknown)
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs.c:gprs_netreg_update() attach: 0, driver_attached: 0
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs.c:gprs_netreg_update() attach: 0, driver_attached: 0
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/gprs.c:gprs_netreg_update() attach: 0, driver_attached: 0
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:20 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 16
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:get_response_common_cb() crsm_info_cb: 90, 00, 28
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 8
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 8
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 8
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 8
+Nov  2 12:20:21 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/drivers/atmodem/sim.c:at_crsm_read_cb() crsm_read_cb: 90, 00, 8
+Nov  2 12:20:22 treongw1-6b4f546c daemon.debug ofonod[705]: ../git/src/modem.c:get_modem_property() modem 0x14ea010 property SystemPath

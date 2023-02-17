@@ -1,0 +1,40 @@
+Jeri Haapavuo 12:18 PM
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html
+
+Jeri Haapavuo 12:30 PM
+Arvioita lonkalta:
+- Global IMS: 0.5 htkk
+- Q3-Q4: DMS/DTS UX Improvements 1: 3 htkk
+- Q3-Q4: Performance scalability (osa 1): 2 htkk
+- Q3-Q4: Doctor value 1: 1 htkk
+- Q3: Doctor work assignments: 1.5 htkk
+- Q4: Enable external annotation: 1.5 htkk
+Total: 9.5 htkk + release, testaus ym.
+
+Jeri Haapavuo 12:39 PM
+1.6 FTE * 88 €/h * 150 h/kk = 21 120 €/kk
+3.0 FTE * 88 €/h * 150 h/kk = 39 600 €/kk
+4.0 FTE * 88 €/h * 150 h/kk = 52 800 €/kk
+
+Jeri Haapavuo 12:44 PM
+TaskSecurity Improvement: Prevent slow sending of HTTP body & headers
+PULTEK-708Medium1
+TaskSecurity Improvement: Introduce an artificial delay for login requests and logout user in case of a brute force attack
+PULTEK-709Low1
+TaskSecurity Improvement: Do not allow use of weak passwords
+PULTEK-710Low1
+TaskSecurity Improvement: Add Secure-flag to all cookies that are secure (i.e. not session related)
+PULTEK-711Low1
+TaskSecurity Improvement: Prevent storing any malicious data
+PULTEK-712Low1
+TaskSec
+prod-sydänsairaala tutkimus S
+
+
+Tässä työmääräarviot (yht. 10htkk)
+- Performance scalability (osa 1): 2 htkk
+- SSO: 1,5htkk
+- Global IMS: 0.5 htkk
+- DMS/DTS UX Improvements 1: 3 htkk
+- Doctor work assignments: 1.5 htkk
+- Enable external annotation: 1.5 htkk
