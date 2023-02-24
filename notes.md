@@ -645,7 +645,47 @@ Hidden assumption
 # Windows 11 apps to install
 
 - putty, droidcam, brave, SteelSeries GG, Discord, Git, Subtitle Edit
- 
- 
+
+- 30 pcs (some to Jari, some the Kyrel)
+
+# Questions for Adrian:
+- https://pulseon.atlassian.net/browse/AIVER-16 is tested by AIVER-2
+- https://pulseon.atlassian.net/browse/AIVER-24 added Component Service
+- https://pulseon.atlassian.net/browse/AIVER-27 added Component Service
+- https://pulseon.atlassian.net/browse/AIVER-30 Should we add chgin error - KUISMA 
+- https://pulseon.atlassian.net/browse/AIVER-31 link same as https://pulseon.atlassian.net/browse/AIVER-29
+- https://pulseon.atlassian.net/browse/AIVER-33 add "Relates to" to dirs mentioned in the Aino Design Verification Plan
+- https://pulseon.atlassian.net/browse/AIVER-48 Should we link Atostek requirements and testing?
+- https://pulseon.atlassian.net/browse/AIVER-49 added tested by https://pulseon.atlassian.net/browse/AIVER-143
+- https://pulseon.atlassian.net/browse/AIVER-50 verification method is Atostek verification
+- https://pulseon.atlassian.net/browse/AIVER-51 verification method is Atostek verification
+- https://pulseon.atlassian.net/browse/AIVER-51 we should get data for this now
+- https://pulseon.atlassian.net/browse/AIVER-52 link to actual requirements
+- https://pulseon.atlassian.net/browse/AIVER-54 is this automated, how about https://pulseon.atlassian.net/browse/AIVER-149
+- https://pulseon.atlassian.net/browse/AIVER-56 Should we link the SGS report?
+- https://pulseon.atlassian.net/browse/AIVER-57 Should we link the SGS report?
+- https://pulseon.atlassian.net/browse/AIVER-58 hw-test-plan label
+- https://pulseon.atlassian.net/browse/AIVER-59 usability-test-plan, hw-test-plan?
+- https://pulseon.atlassian.net/browse/AIVER-60 usability-test-plan
+- https://pulseon.atlassian.net/browse/AIVER-66 we could add aiver-143
+- https://pulseon.atlassian.net/browse/AIVER-67 we could add aiver-143
+- https://pulseon.atlassian.net/browse/AIVER-68 Investigation ongoing about sydänsairaala study
+- https://pulseon.atlassian.net/browse/AIVER-67 usability-testing
+- https://pulseon.atlassian.net/browse/AIVER-68 sgs-testing
+- https://pulseon.atlassian.net/browse/AIVER-69 usability
+- https://pulseon.atlassian.net/browse/AIVER-72 Should we add a test about exported sessions or link atostek test?
+
+
+
+Is this WD software?
+- https://pulseon.atlassian.net/browse/AIVER-43
+- https://pulseon.atlassian.net/browse/AIVER-44
+- https://pulseon.atlassian.net/browse/AIVER-46
+- https://pulseon.atlassian.net/browse/AIVER-47
+- https://pulseon.atlassian.net/browse/AIVER-48
+
+Tests
+- https://pulseon.atlassian.net/browse/AIVER-145 never run
+- https://pulseon.atlassian.net/browse/AIVER-149 could be linked to USB and BLE requirements
  
  
