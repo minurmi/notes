@@ -239,5 +239,302 @@ Web-käyttöliittymä on ilmeisesti ainoastaan ammattilaisen käytössä. Miten 
 Mainitaan, että järjestelmän tietokanta on salattu, mutta salausavaimen hallinnasta ei ole kuvausta.
 - Muutama selvennys lisätty kappaleeseen 8.
 
+## Document and Record Control Procedure
+
+3.1: Mites tuotantodokumentit? Ne ei ole Aino Document Registerissä.
+4.4: Pitäisikö tähänkin lisätä maininta sähköpostista tai muusta kuten 6.2. Mitä tarkoittaa Direct Recipients ja CC kenttä?
+4.9.	Document Retention: Should we add patinet data and logs?
+4.6.2 Table 6: Onko tämä mahdollista kaikille dokumenteille? "adding an “Impact Analysis” sheet in the beginning of the document"
+6.1.1: Olen käyttänyt approve flowta ilman docusignia. Onko OK?
 
 
+
+## Aino ECG battery aging in shelf-mode verification plan and report
+- Pitäisikö Antti laittaa myös katselmoijaksi, kun tiettä myös paljon näistä asioista?
+- Laita alkuun tarkka syy sille miksi dokumentti tehtiin. Jotain tyyliin, että se on verifioimaan vaatimusta, että rannelaitteen shelf-life on 3 vuotta, joka on määritetty user guidessa (vai missä toi nyt on?).
+- 6.1:
+  * Kuville pitää olla selkeä lähde mistä otettu.
+  * Selitys mistä DTP140757 tulee (ilmeisesti ranneltaitteen akkumalli. viittaus HW design dokkariin)
+- 6.2:
+  * Alkuun selitystä mikä shelf-mode on ja mistä akun kulutus siinä tilassa koostuu: laite menee shelf-modeen, kun se ei ole mittaustilassa. Laite on oheistettu varastoimaan niin, että akku on ladattu täyteen. Käytössä laite menee shelf-modeen, kun akku on 8%, mutta laitetta ei pidä varastoida näin.
+  * Shelf-modessa mcu ym. on pois päältä ja vain RTC, safety circuit, power switch circuit ym. pakolliset on päällä. Tässä olisi myös hienoa viitata HW design dokkariin. Viittaus dokkariin, jossa 1 uA virrankulutus on mitattu olisi hieno.
+- 6.3: energy mount --> amount of energy
+- 6.4:
+  * "as we can see from previous" tässä jäänyt pois sana, mikä previous? Ehkä Section 6.1?
+  * En ymmärrä miten tämä "the voltage and charge drops much faster at very first moments of the storage" ja pari seuraavaa lausetta perustelee lineaarisen interpolaation pessimistisyyttä. Eikös pessimistisyys tule siitä, että loppuosassa tyhjenemisnopeus hidastuu? Ei se, että alussa tyhjeneminen on nopeaa.
+  * taulukko "Voltage after 3 years (V)" --> "Calculated voltage after 3 years (V)"
+  * "This is just a concern long term storage of the battery. During normal use the low voltage condition is not an issue at all" Jotain perustelua näille, ilmeisesti että laite katkaisee virran hyvissä ajoin ennen kuin 3,6 saavutetaan ja että lyhytaikainen varastointi tuossa jännitteessä ei aiheuta ongelmia akulle (tähänkin olisi kiva joku lähdeviittaus).
+  
+ ## SW Development Procedure
+ 5.2 "SE requirement"
+ 8. the deliverables of each sprint shall be verified/validated in a documented manner and approved formally
+ 10.1 SW Maintenance Plan
+ 
+ 8.1.	System Testing
+how integration is done?
+
+## Document Management System - Architecture
+Figure 1. should be updated. I'm not sure wha the SharePoint --> GitHub document links mean. Also, Jenkins WD release artifacts are exported to SharePoint (what about others?). Xray reports are exported to SharePoint.
+Section 5. Maintenance: E.g. SharePoint, Jira, GitHub are updated automatically by the manufacturers. Should something be said about that?
+Manufacturing
+Atostek QMS
+
+
+## DTAC_PulseOn
+
+B4: Markku, Tuomas
+A user journey (or customer journey) is a scenario-based sequence of the steps that a user takes in order to accomplish a high-level goal with a company or product, usually across channels and over time.
+
+## Design Change Form Template
+Design change:
+1.3
+miksi lisäys: approved product version**:
+5.2: Major change aika herkästi
+change intends to significantly affect device safety or effectiveness (e.g. significant improvement of clinical outcome, mitigation of a known risk, response to an adverse event, etc.)
+change which introduces new hazard(s)/hazardous situation(s) which is/are not acceptable without mitigation actions (see §3.7)
+any design change which verification/validation results indicate any unexpected issues (please see §8.3.)
+
+
+
+## SharePoint OQ/PR 2023
+
+OK, vaikka tuo kappaleen 4.1 kommentti "operation/performance observed with [...] document library, etc. can be safely generalized to all the other corresponding system elements." EI selkeästi päde, koska kirjastoilla on erilaisia konfiguraatioita (esim versionumero rikki, jos dokumentin siirtää Project -> Products). Olisi hyvä, jos konfiguraatioiden oikeellisuus tarkistettaisiin myös jatkossa osana kelpoistusta. Onko konfiguraatioita dokumentoitu johonkin?
+
+## Jenkins Installation and Configuration 0.10
+
+1.1: typo: "used for the development software". Could mention algorithms in DMS (Beat and ECG quality).
+1.2: typo: "the VCS move the software"
+5.3: Is "PulseOn Android Application repository" needed?
+5.4: typo: "apt get"
+7.9.1: typo: "authorized kyes"
+
+## User Guide Jan 29, 2024 15:45
+
+
+General:
+  - Sections could be links for easier access.
+  - See image titled. Could be link and number.
+  - 5.6.2.2. has links to figures by number
+  - "should be"
+
+1.3.2: "The automated analysis software (ECG Parser) is not complete diagnostic ECG software. Only beat and rhythm classification, HR and HRV interval measurements are validated in the ECG Parser output. Other output parameters may be used for indication only."
+1.3.2: typo: "A wet environment, such as a shower, can cause accidental ECG measurements to start and the device may then the relevant notifications erroneously"
+1.3.2.: typo: The device and its accessories must not be serviced or undergo maintenance on while being worn or in use.
+1.3.3: different font: The wrist device is not intended to be used on people who have a pacemaker.
+1.3.7: wording: However, the wrist it is worn on can be alternated.
+2.1:   wording: for possible monitoring by the doctor.
+2.1:   is this neede: The DMS may also be locally deployed on the hospital premises to be hosted on the hospital IT infrastructure.
+2.1.1:
+  - more like 5 months (50 ECGs per day, 1 month if 90 ECGs per day)
+  - Should we drop? Apple Safari
+  - Workstation requirements
+2.2:
+  - Device components described in multiple section:
+  - wording: wrist-wearable, wrist-worn device, wrist device
+2.2.1.1: link to Recharging section
+2.2.3 The computer needs to have the Data Transfer Software installed. "and running"
+3.3: typo: take a ECG measurement
+3.4.3
+  - Notifications could come before taking ECG.
+  - Logic is very hard to follow.
+  - Table 3 could have action column on what to do: e.g. take and ECG
+3.4.5: typo: docked
+3.6:
+  -  Optional using gateway: Should charging dock be optional?
+  -  "but not part of it" is confusing to users
+3.6.1:
+  -  Model number: 1111. Should add 1211
+  -  LTE NB-IOT	has been disabled (instructed by Treon not to use)
+3.6.2: do not use the PulseOn device. Should this be about gateway?
+4.1.: The wrist device needs to be linked to the patient in the Data Management Service.
+5: a local installation of DTS: what is local?
+5.2:
+  - typo: The ECGs measurements
+  - the software this document refers to. This section
+5.3: Doctor and nurse have same functions
+5.4.1: URL of the DMS deployment. What is this?
+5.4.6: delete user data?
+5.5.1: A Customer System, or DMSSystem. What is DMSSystem? Should we include SuperUser functionalities?
+5.5.2: Figure 25. Organization system listing is a bit weird.
+5.5.2.1: An administrator is required to set the two-factor authentication to forced if the installation is publicly available.
+5.5.1.2:
+  - See image titled. Could be link and number.
+  - NOT TRUE: At least one ContactPerson is required for each Customer/DMSSystem.
+5.5.2.3:
+  - External organization not explained
+  - Figure 29 quite small
+5.5.2.4: It should be kept in the system for traceability. --> it is
+5.5.3	User Management could be before system and org stuff in manual
+5.5.3.1.:
+  - role selection quite detailed walkthrough
+  - typo: NOTE: The user organizations added can belong only to Internal or External Organizations
+5.5.3.2:
+  - Different font: Creating a User
+  - Disable 2FA could be own section.
+  - NOTE: MFA mentioned once, 2FA 40 times
+6.5.1.2:
+  - late or that the measurement session is late for review. Should it be explained more what it means?
+  - FILTER --> SEARCH
+  - Figure 38. Red boxes: The red parts of the image are not part of the software and were added for clarity.
+  - MODIFY --> EDIT
+  - Not available: ARCHIVE PATIENT
+  - Figure 39: Should be change Cancel RED?
+  - EDIT PATIET --> SAVE CHANGES
+5.6.2:
+  - Could link to section on Using the device.
+  - the device
+5.6.2.1: Figure 41: colors incorrect
+  - Not necessary: with an authorized user logged in to the DMS
+5.6.2.2.: Figure fort weird
+  - Is the difference clear?: DTS applications context menu
+5.6.2.3:
+  - (i) is weird
+  - Data transfer info in weird place. Could be somewhere in upload section.
+5.6.2.3.2	Measurement Session Week View
+  - I would put the image to viewing data section
+  - not correct: the wrist devices IBI sensor
+  - difficult sentence: The circled numbers indicate ECG measurements of the selected week, which will be displayed as circles, at their appropriate day of the week and time of day
+  - what? Annotated ECGs will also be distinguishable
+5.6.2.3.3:
+  - NOT TRUE: Each segment will be coloured according to the same logic as the days in the week view
+5.6.2.3.4:
+  - Not exactly true: The measurement session day view will contain all the ECG measurements taken during that day
+  - typo: algorhithm
+  - Could be reworded more nicely: Directly from device
+5.6.2.3.5.:
+  - red dot at end.
+  - Maybe too many: All data should be reviewed by a healthcare professional. 
+  - ? to which the User has access.
+  - Why should? The zoom reset button should undo this action.
+  - Why should and clearly? The interface should clearly display the length of the measured area in milliseconds.
+5.6.2.3.7:
+  - Not true. Old image: With a single ECG measurement highlighted, the ECG annotation-related functionalities will be available to the User.
+  - Not true: Annotations of the measurement session --> Session annotations
+5.6.3:
+  - weird wording: an easy-to-operate wrist device to take ECG measurements in everyday life
+  - what? signal quality level
+  - what? “no signal” and “no beats detected”
+  - Table 8: do we show all 12?
+5.6.4:
+  - Update: “Export the measurement session” and “Export annotated ECGs”.
+  - The user cannot navigate around during this time
+
+
+
+SIVULLA 80
+
+# AMS-1 Periodic Safety Update Report
+Comments
+- Section 2. has larger font in the start of 2nd paragraph, which looks out-of-place.
+- Section 7.3 I would undertand some ongoing process by the expression "until perpetuity" but the calculation has been done and there is an actual end date. I would usggest using the actual end date for when the calculation was made instead.
+- Section 7.4 typo "was analyzed algorithm team"
+- Sections 7.5 and 8. use "Aino", which could be changed to AMS-1 device.
+
+# Management Review Meeting Agenda & Minutes Template v1.5
+- Document Title is "[Date]", which could be changed to something more descriptive.
+- Should the Net Promoter Score (NPS) be deleted from 12.1 as well?
+
+# Aino Device Tester Tool Type Qualification Form v0.7
+- Point of type qualification is to check that tools is ready to be tested
+- Planned to be tested --> a test case has been implemented
+
+
+# Design Change Procedure v4.6
+- Section 2.1: typo "prectices"
+- Figure 1: arrowhead missing from significant change -> yes
+- Section 4.2: typo "Corrections actions"
+- Section 4.2: "allow access to device-related services" could be reworded to "restore access to online service"
+- Section 4.3: typo "chage"
+- Section 4.4: typo "Design Change For"
+- Section 4.5: typo "If change proposal rejected"
+
+# Post-Market Surveillance Procedure v3.20
+MDCG 2019-16 ohjeistuksen voisi mainita referensseissä ja sen mukaisesti voisi lisätä tietoturva-asiaa vielä explisiittisemmin useampaan kohtaan, esim.
+  - Taulukko 2. "devices shall be safe and secure in their intended uses/purposes"
+  - Kappale 5.5. voisi mainita, että security incident voi myös mennä tähän kategoriaan, jos sillä on suoraa tai epäsuoraa vaikutusta turvallisuuteen (MDCG 2019-16 Annex II).
+  - Security melkeimpä joka kohtaa, jossa mainitaan safety, esim kappale 6.1.1. "quality, safety, security and performance"
+- Kappale 5.3: Käytännössä palautteen vastaanottaja ei välttämättä osaa tehdä arviota tarvitaanko "immediate actions". Tähän voisi laittaa, että mikäli vastaanottaja on epävarma arviosta niin ottaa yhteyttä reponsible area owneriin.
+- Kappale 7: Eikö Immediate Actionsit ole nyt mukana Design Change Producuressa eli voisi mainita, että toimitaan sen mukaan.
+
+# Management Review Meeting Agenda & Minutes 12.03.2024.docx v0.8
+Poistaisin muutokset Changes to the Previously Approved Version kappaleesta.
+
+# Purchase Procedure v7.6
+- Aino voisi korvata AMS-1
+
+# RMT Meeting Minutes 2024-05-16
+Front page:
+  - version is incorrect in "Aino 01.00.12 System Release". This could be changed to "AMS-1 01.00.13 System Release"
+  - Row "10" should be "Time" I suppose.
+Section 4.
+  - Only DMS/IMS/DTS bugs are in "Atostek's Jira". Others are maintend by PulseOn.
+Section 4.2:
+  - Again this was not only Atostek’s risk assessment but combining the assesment of both Atostek and PulseOn Jira projects.
+
+# Aino Risk Management Register 3.28
+CHANGE HISTORY: näyttää olevan aika vanha.
+Muita huomioita: DEVICE OVERVIEW: Pitäisikö  olla "PulseOn Arrhythmia Monitor System" ja pitäisikö version olla ensimmäinen CE hyväksytty systeemiversio 01.00.01?
+
+# SharePoint Online Tool Item Qualification 2024 v0.7
+Metadata: Reviewers are wrong.
+- Header: Document version wrong.
+- 3.1: "responsible person" and "IQ need assessment" empty
+- 4.1: "SW installation-specific assessment", "need for PQ" and "manufacturer’s OQ forms available" empty
+All test cases: I would like to see the library (and other relevant information if any) where the test was done in the test notes because we have - different configurations in different libraries.
+- 4.2	OQ/PQ Breakdown: Reference to URS should use the requirements defined in the Type qualification form
+- OQ/PQ - 04: "The file can be accessed from both searches directly." does not seem to be tested.
+- OQ/PQ - 09: "Repeat step one and two from OQ/PQ – 08..." Should this be steps 2. and 3.?
+
+# SharePoint Online Tool Type Qualification 2024 v0.2
+- Metadata: "Changes to Previously Approved Version" seems to apply to the template and no the document in question.
+- Header: Document version wrong.
+- Section 4: Does SharePoint really not require any configuration? Wouldn't it be used for data manipulation, transfer and visualization?
+- Section 5: If OP is responsible for DQ, he should be reviewer.
+- Section 5.1: This is a requalification so "in case of requalification" should be filled for each URS.
+
+# SharePoint Online Tool Type Qualification 2024 v0.2
+- responsible person for URS role missing
+
+# SharePoint Online Tool Item Qualification 2024 v0.8
+3.1 item configuration** on valittu no, mutta silti alempi kohta, jossa lukee "if yes,.." on täytetty
+4.1: edelleen paljon kohtia tyhjänä
+OQ/PQ - 04: "The file can be accessed from both searches directly." vaatimusta ei ole huomioitu testauksessa tai ainakaan siitä ei ole mainintaa
+Onko URS-ID 1.7.5 jätetty tarkoituksella testaamatta? Mulle sopii olla testaamattakin, mutta pitikö johonkin perustella miksi ei testata?
+
+# Quality Manual v 7.8
+- Changes section?
+- 7.5.6: Should there be a mention about cloud service deployment?
+  "Software deployment doesn’t contain any stages which require validation because the release packages’ correctness may be verified before their deployment to the manufacturing partner. However, automated processes utilized during compilation of the release packages shall be validated appropriately"
+- 7.5.8: UDI is not used in manufacturing at all steps?
+- 7.5.10: Is data pseudonymized?
+- Chapter 7.5.10: clarified protection of patient data.
+- Chapter 7.5.11: added description of how medical device software is protected from unauthorized 
+
+# Design change UDI
+- Section 1.3: Approved AMS-1 version in Singapore is 01.00.06
+- Section 2.7: Add Singapore as target market. The device is not yet approved in Saudi-Arabia so that should not be a target market.
+
+# Software Development Procedure 1.6
+- Typo: "nay contribute"
+- Section 10. Software Maintenance intro could include keeping SW state of the art as an intention since its required by the MDR.
+TODO:
+  - SW risk control methods as SW requirements
+  - patches and obsolescence of SOUP.
+
+- Include Jaakko in the review flow or remove him from the document front page.
+- Replace SFS-EN 62304 --> IEC 62304
+- Add maintaining state of the art as an intention in section 10.
+
+# RMT meeting minutes
+- Header page:
+    + System version is incorrect in header page
+    + System Design Change version number is incorrect as of now but this could be on purpose.
+- Section 3. Wrist device hardware version 1.4 could be added in the heading
+- Section 4. Correct DMS version is 01.09.00
+- Section 4.1.1.2.: It could be added that the file is automatically quarantined if scanning finds malware.
+
+# CAPA-037 Form v0.1
+Document "PODMS-1416550729-5734 AMS-1 - List of Applicable Standards" does not exits. It should probably be "PODMS-1378432600-5734 AMS-1 - List of Standards"
+
+# AMS-1 Risk Management Plan v4.3
+- Section 2: Add cybersecurity risk document

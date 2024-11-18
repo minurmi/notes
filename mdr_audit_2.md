@@ -71,3 +71,21 @@ mdsap Euforinsin tarjoama USA > Canada
 tammikuu 27 2023
 seuraava audit tasan vuoden päästä
 
+# 28.11.2023
+
+Systeemi vai laitteita. Lisää kaikkiin komponentteihin linkitys systeemiin AMS-1, joka on sertifioitu. Musta mökki vain, jos PulseOn on valmistaja, vain yksi laite.
+Sertifikaatti linjassa Eudamedissa -- vain yksi laite.
+
+- Risk Managemenet Plan: eka standardi on vanha - pitää käyttää harmonisoitua standardia
+
+Testerin Tyyppikelpoistus puuttuu: Testnovan pääsofta pitää kelpoistaa meille. Jälki siitä pääsofta versiosta ja moduuleista millä on testattu.
+Equipment and Software Tool Register: Testeri PC:lle ei määritetty vaatimuksia.
+
+Design Change: Lisää analyysitarve jakelijan uudelleenkoulutuksesta.
+
+Ostoprosessiin mukaan muu riskinhallinta: Kriittisille toimittajille vaihtoehto -> toimittajarekisteriin kirjaus vaihtoehtoisesta toimittajasta.
+
+Software Risk class B -> class A
+- perustelu Risk Management Raporttiin miski luokka A
+- maininta, että dokumentaatio tuotettu luokan B mukaan, mutta laskettu luokkaan A
+- 

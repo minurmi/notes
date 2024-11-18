@@ -1,0 +1,13 @@
+
+# Firefox without installing certificate
+
+- DTS is green
+- When starting a session you get the following message:
+
+Message:
+Device not found
+
+Recommended action:
+Make sure desktop application is running and device is connected.
+Continue
+

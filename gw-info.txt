@@ -1,0 +1,17 @@
+Tue, Jul  4, 2023  3:03:51 PM
+Jul  4 08:59:55 gatekeeper1 gw-ssh: Gateway connected: treongw1-d6bdcd40 Port: 35958 RELEASE_VERSION = 6.5.1.20220822124812 pulseon-app - 1.0.6 pulseon-dms-config-prod-dna-eu - 1.0.6 pulseon-rssh - 1.0.6
+Jul  4 10:43:20 gatekeeper1 gw-ssh: Gateway connected: treongw1-b8070137 Port: 36646 RELEASE_VERSION = 6.5.1.20220822124812 pulseon-app - 1.0.6 pulseon-dms-config-prod-dna-eu - 1.0.6 pulseon-rssh - 1.0.6
+Jul  4 11:04:10 gatekeeper1 gw-ssh: Gateway connected: treongw1-019f1a17 Port: 36677 RELEASE_VERSION = 6.5.1.20220822124812 pulseon-app - 1.0.5 pulseon-dms-config-prod-dna-eu - 1.0.5 pulseon-rssh - 1.0.5
+Jul  4 11:53:24 gatekeeper1 gw-ssh: Gateway connected: treongw1-6b7911bb Port: 36731 RELEASE_VERSION = 6.5.1.20220822124812 pulseon-app - 1.0.6 pulseon-dms-config-prod-dna-eu - 1.0.6 pulseon-rssh - 1.0.6
+
+Jul  3 18:23:51 gatekeeper1 gw-ssh: Gateway connected: treongw1-1ab11473 Port: 32635 RELEASE_VERSION = 6.5.2.20221214141523 pulseon-app - 1.0.6~2~g2eef20075f pulseon-dms-config-prod-twilio-usa - 1.0.6~2~g2eef20075f pulseon-rssh - 1.0.6~2~g2eef20075f
+
+Jul  4 11:19:07 gatekeeper1 gw-ssh: Gateway connected: treongw1-79e7fefe Port: 35970 RELEASE_VERSION = 7.0.1.20230227130815 pulseon-app - 1.0.7 pulseon-dms-config-prod-dna-eu - 1.0.7 pulseon-rssh - 1.0.7
+
+Jul  4 11:29:42 gatekeeper1 gw-ssh: Gateway connected: treongw1-fe76b6e7 Port: 36754 RELEASE_VERSION = 7.1.0.20230526114038 pulseon-app - 1.0.7~4~gb3ca2d8903 pulseon-dms-config-prod-dna-eu - 1.0.7~4~gb3ca2d8903 pulseon-reinstall - 1.0.7~4~ge8057a3ed8 pulseon-rssh - 1.0.7~4~gb3ca2d8903
+Jun 28 14:14:03 gatekeeper1 gw-ssh: Gateway connected: treongw1-1e0293de Port: 44688 RELEASE_VERSION = 7.1.0.20230526124715 pulseon-app - 1.0.7~9~g0e5c3e0 pulseon-dms-config-test-onomondo-eu - 1.0.7~9~g0e5c3e0 pulseon-rssh - 1.0.7~9~g0e5c3e0
+
+Jul  4 06:23:37 gatekeeper1 gw-ssh: Gateway connected: treongw1-9c8edf84 Port: 44696 RELEASE_VERSION = 7.1.1.20230612092222 pulseon-app - 1.0.7~16~g40a38e4 pulseon-dms-config-test-onomondo-eu - 1.0.7~16~g40a38e4 pulseon-rssh - 1.0.7~16~g40a38e4
+Jul  4 10:41:03 gatekeeper1 gw-ssh: Gateway connected: treongw1-e6e2cba2 Port: 32617 RELEASE_VERSION = 7.1.1.20230612080149 pulseon-app - 1.0.7~15~geaddd7cb40 pulseon-dms-config-test-dna-eu - 1.0.7~15~geaddd7cb40 pulseon-rssh - 1.0.7~15~geaddd7cb40
+Jul  4 11:42:50 gatekeeper1 gw-ssh: Gateway connected: treongw1-4b5833f0 Port: 32664 RELEASE_VERSION = 7.1.1.20230612080149 pulseon-app - 1.0.7~15~geaddd7cb40 pulseon-dms-config-test-dna-eu - 1.0.7~15~geaddd7cb40 pulseon-rssh - 1.0.7~15~geaddd7cb40
+Jul  4 11:51:24 gatekeeper1 gw-ssh: Gateway connected: treongw1-600d9c1a Port: 32767 RELEASE_VERSION = 7.1.1.20230612080149 pulseon-app - 1.0.7~15~geaddd7cb40 pulseon-dms-config-prod-dna-eu - 1.0.7~15~geaddd7cb40 pulseon-reinstall - 1.0.7~10~g69c56eb2c1 pulseon-rssh - 1.0.7~15~geaddd7cb40
